@@ -1,0 +1,85 @@
+Imagine This Situation
+
+You observe:
+
+CGPA	Package
+6	4 LPA
+7	6 LPA
+8	8 LPA
+9	10 LPA
+
+You notice:
+
+Higher CGPA → Higher Package
+
+Now suppose a friend asks:
+
+My CGPA is 8.5. What package can I expect?
+
+There is no student with exactly 8.5 CGPA.
+
+So we need to draw a line through the data.
+
+Visualize:
+
+Package
+10 |          *
+ 9 |
+ 8 |       *
+ 7 |
+ 6 |    *
+ 5 |
+ 4 | *
+   --------------------
+    6  7  8  9   CGPA
+
+Linear Regression tries to draw the best line through these points.
+
+What is Slope?
+
+Slope tells us:
+
+If CGPA increases by 1, how much does package increase?
+
+Look:
+
+CGPA	Package
+6	4
+7	6
+
+CGPA increased:
+
+7 - 6 = 1
+
+Package increased:
+
+6 - 4 = 2
+
+So:
+
+Slope = 2
+
+Meaning:
+
+Every 1 CGPA increase gives approximately 2 LPA more package.
+
+Think of climbing a mountain.
+
+Steep Mountain
+      /
+     /
+    /
+   /
+
+High slope.
+
+Flat Road
+-----------
+
+Slope = 0
+
+In ML:
+
+High slope
+=
+Package changes quickly with CGPA

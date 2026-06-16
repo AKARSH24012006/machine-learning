@@ -1,0 +1,138 @@
+Real Meaning of Intercept
+
+Intercept is:
+
+The value of y when x = 0
+
+Suppose:
+
+Package = 2 × CGPA + 1
+
+Let's test.
+
+CGPA = 6
+
+Package = 2×6 +1
+         = 13
+
+CGPA = 7
+
+Package = 2×7 +1
+         = 15
+
+Works.
+
+Now ask:
+
+What if CGPA = 0?
+Package = 2×0 +1
+         = 1
+
+That 1 is the intercept.
+
+Real Meaning of Intercept
+
+Intercept is:
+
+The value of y when x = 0
+
+In our case:
+
+Package when CGPA = 0
+
+Graphically:
+
+Package
+ ^
+ |
+10|
+  |
+  |
+  |
+ 1|----* ← intercept
+  |
+  ------------------> CGPA
+      0
+
+The place where the line touches the Y-axis.
+
+Why Do We Need Intercept?
+
+Suppose we only use:
+
+Package = 2 × CGPA
+
+Then:
+
+CGPA = 8
+
+Package = 16
+
+But actual data says:
+
+Package = 17
+
+We're always missing by 1.
+
+So we add:
+
++1
+
+and get:
+
+Package = 2 × CGPA +1
+
+Now predictions fit better.
+
+That extra adjustment is the intercept.
+
+Think Like a Cricket Player
+
+You told me you've played cricket.
+
+Suppose:
+
+Runs = 50 + 10 × Matches
+
+Meaning:
+
+Already have 50 runs before counting matches.
+Every match adds 10 runs.
+
+Here:
+
+10 = slope
+50 = intercept
+
+Slope = how much changes per match.
+
+Intercept = starting value.
+
+In Your Placement Dataset
+
+Suppose sklearn gives:
+
+Slope = 2.6
+Intercept = -7
+
+Then model becomes:
+
+Package = 2.6 × CGPA - 7
+
+Now a student with CGPA 9:
+
+Package = 2.6 × 9 - 7
+         = 16.4
+
+Predicted package:
+
+16.4 LPA
+The One-Line Memory Trick
+Slope
+How much Y changes when X increases by 1
+
+In your dataset:
+
+How much package changes when CGPA increases by 1
+Intercept
+Starting value of Y when X = 0
